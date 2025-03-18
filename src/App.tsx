@@ -18,7 +18,7 @@ const HeroSection = () => {
 
       {/* Text Section - Closer to Image */}
       <div className="md:pl-16 max-w-lg text-center md:text-left">
-        <h2 className="text-3xl md:text-5xl text-red-500 font-medium">Hello, I'm Nancy</h2>
+        <h2 className="text-3xl md:text-5xl text-red-500 font-medium">Heyy, I'm Nancy</h2>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-tight mt-2">
           Professional <br />
           UI/UX Designer <br />
