@@ -13,7 +13,7 @@ const HeroSection = () => {
       <img 
         src={image2} 
         alt="Profile" 
-        className=" w-200 h-150 max-w-xs md:max-w-3xl object-cover rounded-none shadow-lg"
+        className="w-full md:w-200 h-auto md:h-150 max-w-xs md:max-w-3xl object-cover rounded-none shadow-lg"
       />
 
       {/* Text Section - Closer to Image */}
@@ -32,9 +32,9 @@ const HeroSection = () => {
         </button>
 
         <div className="w-full mt-4 flex justify-center md:justify-start bg-white p-2 space-x-4">
-          <Camera color="blue" size={48} />
-          <Twitter color="blue" size={48} />
-          <Facebook color="blue" size={48} />
+          <Camera color="blue" className="w-10 h-10 md:w-12 md:h-12" />
+          <Twitter color="blue" className="w-10 h-10 md:w-12 md:h-12" />
+          <Facebook color="blue" className="w-10 h-10 md:w-12 md:h-12" />
         </div>
       </div>
     </header>

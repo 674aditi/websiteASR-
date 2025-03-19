@@ -1,4 +1,5 @@
 import image5 from '../assets/image5.png';
+// import image5 from '../src/assets/image5.png';
 import { CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 
 const services = [
@@ -9,32 +10,32 @@ const services = [
 
 const ServicesSection = () => {
     return (
-        <section className="py-12 px-6 bg-gradient-to-r from-white to-[#DAFBFC] flex flex-col md:flex-row items-start">
+        <section className="py-12 px-6 bg-gradient-to-r from-white to-[#DAFBFC] flex flex-col md:flex-row items-center md:items-start">
             {/* Left Text Section */}
             <div className="w-full md:w-1/3 pr-6 flex-shrink-0 text-center md:text-left">
-                <h3 className="text-red-500 text-2xl md:ml-20">Services</h3>
-                <h2 className="text-3xl font-bold text-gray-900 leading-tight md:ml-20">
+                <h3 className="text-red-500 text-2xl ml-0 md:ml-20">Services</h3>
+                <h2 className="text-3xl font-bold text-gray-900 leading-tight ml-0 md:ml-20">
                     I Provide <br />
                     wide range of <br />
                     Digital Services
                 </h2>
-                <div className="w-full md:w-50 mt-4 flex justify-center md:justify-end bg-white p-2 space-x-4">
+                <div className="w-full md:w-50 mt-4 flex flex-row items-center justify-center md:justify-end bg-white p-2 space-x-4">
                     <CircleArrowLeft color="grey" size={48} />
                     <CircleArrowRight color="red" size={48} />
                 </div>
             </div>
 
             {/* Services Cards Section */}
-            <div className="flex flex-wrap justify-center md:flex-nowrap gap-6 md:gap-12 overflow-x-auto pb-10 w-full md:w-2/3">
+            <div className="flex flex-col md:flex-row gap-12 pb-10 w-full md:w-2/3">
                 {services.map((service, index) => (
-                    <div key={index} className="p-6 bg-white shadow-lg rounded-lg w-80 h-auto flex-shrink-0 text-center">
+                    <div key={index} className="p-6 bg-white shadow-lg rounded-lg w-full md:w-80 h-auto md:h-80 flex-shrink-0 text-center">
                         {/* Service Icon */}
                         <div className="flex justify-center mb-4">
-                            <div className="w-50 mt-4 flex items-center justify-center bg-white p-2">
+                            <div className="w-full mt-4 flex flex-row items-center justify-center bg-white p-2 space-x-4">
                                 <img 
                                     src={image5} 
-                                    alt="Service Icon" 
-                                    className="w-16 h-16 object-cover rounded-none shadow-lg"
+                                    alt="Profile" 
+                                    className="w-15 h-15 object-cover rounded-none shadow-lg"
                                 />
                             </div>
                         </div>

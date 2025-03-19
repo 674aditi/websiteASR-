@@ -10,44 +10,44 @@ import { Facebook, Twitter, Instagram } from 'lucide-react';
 
 const Last = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start bg-white pt-10  ">
+    <div className="min-h-screen flex flex-col items-center justify-start bg-white pt-10 w-full">
     <div className="w-full bg-white">
       {/* Feedback Section */}
 
       
-      <div className="text-left py-10 px-20">
-  <h2 className="text-4xl font-semibold text-gray-800">
-    Clients are satisfied with our work, <br /> view feedback
+      <div className="text-left py-10 px-6 md:px-20">
+  <h2 className="text-2xl md:text-4xl font-semibold text-gray-800">
+    Clients are satisfied with our work, <br className="hidden md:block" /> view feedback
   </h2>
 
   <div className="relative">
   {/* Your main content goes here */}
 
   {/* Arrows Positioned at the Top Right */}
-  <div className="absolute bottom-10 right-10 flex items-center space-x-4 bg-white p-2 shadow-lg rounded-lg">
-    <CircleArrowLeft color="black" size={28} />
-    <CircleArrowRight color="red" size={28} />
+  <div className="absolute bottom-20  right-4 md:right-60 flex items-center space-x-4 bg-white p-2 shadow-lg rounded-lg">
+    <CircleArrowLeft color="black" size={18} />
+    <CircleArrowRight color="red" size={18} />
   </div>
 </div>
         
-        <div className="mt-6 flex justify-center gap-20 mb-30">
+        <div className="mt-6 flex flex-col md:flex-row justify-center gap-10 md:gap-20 mb-10 md:mb-30">
         <img 
           src={image2} 
           alt="Profile" 
-          className="w-110 h-110 object-cover rounded-none shadow-lg "
+          className="w-60 md:w-110 h-auto object-cover rounded-none shadow-lg "
         />
         <img 
           src={image9} 
           alt="Profile" 
-          className="w-200 h-110 object-cover rounded-none shadow-lg"
+          className="w-80 md:w-200 h-auto object-cover rounded-none shadow-lg"
         />
       </div>
 
       </div>
 
       {/* Service Inquiry Section */}
-      <div className="relative">
-  <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-xl rounded-4xl p-6 w-2/3 text-center">
+      <div className="relative w-full">
+  <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-xl rounded-4xl p-6 w-11/12 md:w-2/3 text-center">
     <h3 className="text-lg font-semibold text-gray-900">
       Can't find your desired service?
     </h3>
@@ -60,9 +60,9 @@ const Last = () => {
 </div>
 
       {/* Footer */}
-      <footer className="bg-blue-700 text-white mt-12 py-6 text-center">
+      <footer className="bg-blue-700 text-white mt-12 py-6 text-center w-full">
         {/* <img src={logo} alt="Company Logo" className="mx-auto w-32" /> */}
-        <div className="mt-4 space-x-6">
+        <div className="mt-4 space-x-6 flex flex-wrap justify-center">
           <a href="#" className="text-white">About</a>
           <a href="#" className="text-white">Service</a>
           <a href="#" className="text-white">Portfolio</a>
